@@ -1,0 +1,35 @@
+import { LightningElement } from 'lwc';
+export default class Hoje2 extends LightningElement {
+//meu objeto
+valores = {
+    firstname:"",
+    lastname:"",
+    email:"",
+    website:"",
+    company:"",
+    anualrevenue:"",
+};
+//array
+array =[1,2,3,4,5,6]
+new = [];
+
+valor(event){
+    console.log("Valor do campo: " +event.detail.value);
+    //identificação dos valores inseridos 
+
+let namevalores = event.target.name;
+let value = event.detail.value;
+ 
+this.valores = {
+    ...this.valores,[namevalores]:value
+ };
+
+ console.log(this.valores);
+}
+ 
+onSpread(){
+    this.new = [4,5,6, ...this.infos];
+    console.log(this.new)
+ }
+
+}

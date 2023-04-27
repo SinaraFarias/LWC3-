@@ -1,20 +1,23 @@
-import { LightningElement, track } from 'lwc';
+import { LightningElement } from 'lwc';
 
-export default class Hoje1 extends LightningElement {
+export default class Exercinput extends LightningElement {
+    nome;
+    peso;
+    altura;
+    result;
 
- nome;
- peso;
- altura;
- result;
+    valor1(event){
 
-    handleOnChange1(event){
         this.peso = event.detail.value;
-    }
-    handleOnChange2(event){
+    };
+
+    valor2(event){
+
         this.altura = event.detail.value;
-    }
+    };
 
     calcularImc(){
-        this.result = this.peso/(this.altura*this.altura);
-    }
+    this.result = this.peso / (this.altura * this.altura);
+
+}
 }

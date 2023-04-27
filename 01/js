@@ -1,0 +1,16 @@
+import { LightningElement } from 'lwc';
+
+export default class Form extends LightningElement {
+
+    nome;
+    tefefone;
+    result;
+
+    handleOnChangeNome(event){
+        this.nome = event.detail.value;
+        console.log(this.nome);
+    }
+
+    handleOnClick(){
+    }
+}

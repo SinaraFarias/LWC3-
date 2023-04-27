@@ -1,0 +1,19 @@
+<template>
+
+    <lightning-card title="Formulário">
+        <div class="form-1">
+
+            <lightning-input label="Primeiro Nome" type="text" name="firstname" onchange={valor}> </lightning-input>
+            <lightning-input label="Sobrenome" type="text" name="lastname" onchange={valor}> </lightning-input>
+            <lightning-input label="Email" type="email" name="email" onchange={valor}> </lightning-input>
+            <lightning-input label="Website" type="text" name="website" onchange={valor}> </lightning-input>
+            <lightning-input label="Empresa" type="text" name="company" onchange={valor}> </lightning-input>
+            <lightning-input label="Receita Anual" type="number" name="anualrevenue" onchange={valor}> </lightning-input>
+            
+            <div class="botao">
+            <lightning-button variant="brand" label="Enviar" onchange={onSpread}></lightning-button>
+        </div>
+       
+    </div>
+    </lightning-card>
+</template>

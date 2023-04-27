@@ -1,17 +1,18 @@
 <template>
     <lightning-card title="IMC">
-		<div class="app slds-p-around_x-large">
+		
+        <div class="app slds-p-around_x-large">
 			<lightning-input label="Nome" type="text" name="nome" > </lightning-input>
-			<lightning-input label="Peso" type="number" name="peso" onchange={handleOnChange1}></lightning-input>
-            <lightning-input label="Altura" type="number" name="altura" onchange={handleOnChange2}></lightning-input>
-        <br>
-
-        <div class="botao">
+			<lightning-input label="Peso" type="number" step=".01" name="peso" onchange={valor1}></lightning-input>
+            <lightning-input label="Altura" type="number" step=".01" name="altura" onchange={valor2}></lightning-input>
+        
+            <br>
+         <div class="botao">
             <lightning-button variant="brand" label="Calcular IMC" onclick={calcularImc}></lightning-button>
         </div>
 
         <div class="result">
-            Resultado do IMC: {result}
+             {result}
         </div>
     </div>
         

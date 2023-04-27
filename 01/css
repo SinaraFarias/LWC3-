@@ -1,0 +1,11 @@
+*{
+    background-image: linear-gradient(rgb(99, 74, 225), rgba(146, 150, 236, 0.2));
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    
+}
+.botao{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    color: aliceblue;
+}
